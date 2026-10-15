@@ -40,12 +40,23 @@ export const About: React.FC = () => {
               </div>
               <div>
                 <span className="block text-[#F3F0E8] font-medium mb-1">DIRECT CONTACT</span>
-                <a
-                  href={`mailto:${SITE_CONFIG.developer.email}`}
-                  className="text-[#D7F36A] hover:underline"
-                >
-                  {SITE_CONFIG.developer.email}
-                </a>
+                <div className="flex flex-col gap-0.5">
+                  <a
+                    href={`mailto:${SITE_CONFIG.developer.email}`}
+                    className="text-[#D7F36A] hover:underline"
+                  >
+                    {SITE_CONFIG.developer.email}
+                  </a>
+                  <a
+                    href={SITE_CONFIG.developer.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#25D366] hover:underline flex items-center gap-1"
+                  >
+                    <span>WhatsApp: {SITE_CONFIG.developer.whatsappFormatted}</span>
+                    <span className="text-[10px]">↗</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

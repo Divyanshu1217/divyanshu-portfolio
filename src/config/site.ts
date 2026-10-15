@@ -50,12 +50,9 @@ export const SITE_CONFIG = {
     bio:
       'I’m Divyanshu, an independent web developer interested in combining thoughtful design with practical web experiences. I build and refine websites for businesses that want a professional online presence without unnecessary complexity.',
     email: 'divyanshub682@gmail.com',
-    /**
-     * Replace with verified WhatsApp phone number (e.g., '919876543210' without '+' or spaces)
-     * When configured, the WhatsApp enquiry button links directly to wa.me chat.
-     */
-    whatsappNumberPlaceholder: '+91 00000 00000',
-    whatsappRawNumber: '', // Set to e.g. '919876543210' once verified by developer
+    whatsappRawNumber: '918837716987',
+    whatsappFormatted: '+91 88377 16987',
+    whatsappUrl: 'https://wa.me/918837716987',
   },
 
   projects: [

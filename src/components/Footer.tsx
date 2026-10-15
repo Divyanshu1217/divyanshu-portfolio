@@ -37,12 +37,22 @@ export const Footer: React.FC = () => {
               Independent web developer based in {SITE_CONFIG.developer.location}. Building modern, responsive websites that move businesses forward.
             </p>
 
-            <div className="pt-2">
+            <div className="pt-2 flex flex-wrap items-center gap-3">
               <a
                 href={`mailto:${SITE_CONFIG.developer.email}`}
                 className="font-mono text-xs text-[#F3F0E8] hover:text-[#D7F36A] transition-colors inline-block py-1 focus-visible:ring-2 focus-visible:ring-[#D7F36A] rounded-sm"
               >
                 {SITE_CONFIG.developer.email}
+              </a>
+              <span className="text-[#AAA99F]/40" aria-hidden="true">·</span>
+              <a
+                href={SITE_CONFIG.developer.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-xs text-[#F3F0E8] hover:text-[#25D366] transition-colors inline-flex items-center gap-1 py-1 focus-visible:ring-2 focus-visible:ring-[#25D366] rounded-sm"
+              >
+                <span>WhatsApp: {SITE_CONFIG.developer.whatsappFormatted}</span>
+                <span className="text-[10px]">↗</span>
               </a>
             </div>
           </div>
