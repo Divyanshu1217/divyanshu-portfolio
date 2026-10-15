@@ -5,6 +5,9 @@
  * live project URLs, and service specifications.
  */
 
+import devdarImg from '../assets/images/project_devdar_himalayan_1791963254101.jpg';
+import luxoraImg from '../assets/images/project_luxora_editorial_1791963253966.jpg';
+
 export interface ProjectConfig {
   id: string;
   index: string;
@@ -64,7 +67,7 @@ export const SITE_CONFIG = {
       description:
         'A premium Himalayan cuisine and restaurant website concept celebrating regional food, cultural storytelling, and an immersive dining experience.',
       liveUrl: 'https://devdar.vercel.app/',
-      image: '/src/assets/images/project_devdar_himalayan_1791963254101.jpg',
+      image: devdarImg,
       imageAlt:
         'Devdar project preview showcasing Himalayan dining table with mountain vistas and artisanal dishes',
       highlights: [
@@ -83,7 +86,7 @@ export const SITE_CONFIG = {
       description:
         'A contemporary premium-brand website concept exploring visual identity, elegant presentation, and a refined digital experience.',
       liveUrl: 'https://luxora-liard-alpha.vercel.app/',
-      image: '/src/assets/images/project_luxora_editorial_1791963253966.jpg',
+      image: luxoraImg,
       imageAlt:
         'Luxora project preview showcasing minimalist luxury bespoke perfume and sculptural ceramics',
       highlights: [

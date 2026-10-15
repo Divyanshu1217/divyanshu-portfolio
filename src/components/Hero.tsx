@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SITE_CONFIG } from '../config/site';
+import heroSculptureImg from '../assets/images/hero_editorial_sculpture_1791963253335.jpg';
 
 export const Hero: React.FC = () => {
   const [imgError, setImgError] = useState(false);
@@ -71,7 +72,7 @@ export const Hero: React.FC = () => {
               <div className="relative rounded-xl overflow-hidden border border-[#F3F0E8]/15 bg-[#191A17] shadow-2xl transition-transform duration-500 hover:border-[#D7F36A]/30">
                 {!imgError ? (
                   <img
-                    src="/src/assets/images/hero_editorial_sculpture_1791963253335.jpg"
+                    src={heroSculptureImg}
                     alt="Refined abstract architectural sculpture highlighting modern digital craftsmanship"
                     className="w-full aspect-[4/3] object-cover filter brightness-[0.96] contrast-[1.04]"
                     loading="eager"
